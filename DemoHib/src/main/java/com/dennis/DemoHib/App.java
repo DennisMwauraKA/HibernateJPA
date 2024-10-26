@@ -34,7 +34,7 @@ public class App {
         session = sf.openSession();
         tx = session.beginTransaction();
 
-        
+        // getting a student from the database
         Student retrievedStudent = (Student) session.get(Student.class, 1081);
         tx.commit();
 
